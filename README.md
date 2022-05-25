@@ -15,17 +15,17 @@ Eooc Mail
 2、つつ保证您的在线率和稳定性，若出现问题请加下方Telegram群组。
 
 ### 关于站长
-Telegram群组: @tsutsu_group
+Telegram群组: @tsutsu_group[https://t.me/tsutsu_group]
 
-个人主页: tsutsu.one
+个人主页: tsutsu.one[https://tsutsu.one]
 
-博客: blog.tsutsu.one
+博客: blog.tsutsu.one[https://blog.tsutsu.one]
 
-万能工具箱: tool.tsutsu.cc
+万能工具箱: tool.tsutsu.cc[https://tool.tsutsu.cc]
 
-系统监控: ops.seto.top
+系统监控: ops.seto.top[https://ops.seto.top]
 
-# 官方域名: eeooc.com & fuck.tsutsu.icu
+# 官方域名: eeooc.com[https://eeooc.com] & fuck.tsutsu.icu[https://fuck.tsutsu.icu]
 ### 你也可以自定义域名! 只需添加两条解析即可!
 
 给你的域名添加一个叫做eooc的解析 (只要是eooc.开头就可以)
