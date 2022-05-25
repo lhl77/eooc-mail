@@ -35,3 +35,5 @@ CNAME --> fuck.tsutsu.icu
 MX --> fuck.tsutsu.icu
 ```
 然后访问你的域名即可~
+
+*注:这里必须要eooc.开头才行, 若想要更加个性化的设置, 请联系[@Ox208](https://t.me/Ox208)申请.*
