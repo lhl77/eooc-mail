@@ -18,26 +18,11 @@
     <script src="js/sweetalert2.0.min.js"></script>
 </head>
 <body>
-<script>
-window.onload = function(){
-   swal('欢迎使用','本程序由 つつ 强力驱动 !','success');
-}
-    function copyText(){ // text: 要复制的内容， callback: 回调
-    var text=document.getElementById('shortid').value;
-    var tag = document.createElement('input');
-    tag.setAttribute('id', 'cp_hgz_input');
-    tag.value = text;
-    document.getElementsByTagName('body')[0].appendChild(tag);
-    document.getElementById('cp_hgz_input').select();
-    document.execCommand('copy');
-    document.getElementById('cp_hgz_input').remove();
-    swal('复制成功','您的邮箱为：'+ text,'success');
-}
-</script>
+
 <div class="ui fixed borderless menu">
   <div class="ui text container" style="max-width: 100% !important;">
     <div href="#" class="header item">
-      <img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAALRQTFRFAAAA+8SrU2Ra98mk+8qx9sae9c6Z+cys+u/c9caX9b2j+/To+efO9sys8bmP9cSP8LGY9rqcUTYr6ayOWmhf6qGC99vA59jGcXls5suzeko357ygYz8zZ29hza+P3H1kklo/5olt2MCpjolz4JhyxrWftpeCwn5erbaxblRAhI6IW0s90Y9qhF5KdIB5pKGTsHNUkJqU4+nmvMTAompOra14qIZxm51soaqlh3xbytPN/Pz8yApVMQAAADx0Uk5TAP///////////////////////////////P///////////////////0H/xf///+L//48GK/////9a/wxJl7IzbgAADdxJREFUeJytmg17oroSgEsBoxEobAREClVErFWr3VJdz/n//+vOTBI+rHu3e3bnebQWJS/zmUng7u5r8v39x9vL6+s0m9zfT7Lp6+vL24/37188+UuA57fXKQx+LZPp69vzXwF9f36Zfh6/A3r5Y8772/8jKJm+vf8B4vmlY6RJtjx/5Hmapnmef5yXXQNOXp7/HJEtq3SgxRupD2m+zP4M894gsmU+6Ihnep3/0iprML9rtH/e9Ll9wmAwspnXP5Iv1eVkb//8DuP5VV3dOR1ciceuISCVwrx+3WbftRrL0WD0JUiDyd6+GM//vKjITEcPUkZ9iLgBGYyW8qyXL5nsXZpqkg8eWmkHs62bmqBvpP6vX/D/c9ZY6uEWJWAYXZ+sSHKWJvulY36QbScVnKJMpSieEp/5At7x4w1l5Nk/vsLI8oahIJ5nMsaDgJs2M0zTYMyyWOB9UijNfk1RDIrbrrEEIBiHsY2AG/ACnMksOPRZm8uvKNIfU7q+rkcEXDcIDOpzhgKfOcd39lkZirLJT/3yrhhSWoaHFw0jWhzUQB69mOIqZUajHiX7SYz989roQRCv0YMunoGtDBjWAJBhWEqYZaIy6sI6lNeb+fKdcjDTZ6Cze7YyjNRQAp+l0eQ3YtTKwDZN6ZeXW7n/RrZMG1PJiA3XkRNZqAdrAPRHUjiq5OQ7dUEPo5FtDwYm2f3tZ07PSREghOX6WNfr8lg4AAE9YEjjShhpZ0WOc4If1sf1LvQeRvbANNPJTed/J4dUZKsHcZzPZ7PZfFeuKwfEMvg1QGtj+MyCy6h3ZQ2nzOfHcgQGM3Nyy7XByFgXGSYPITFm83J3jBAS8ZsQKdyA36R1eaTrmq8JYi5vGIyid5KaEuJJBlxd4pAmPhjlJiHC75ByOpa1PElCyC1XcfyijKUg9HuwcyUZHK/2psEAgoEdOW693pEqQkHIYC89r6OjpgNTQR7Ws8fH+W5dwyVGkWX4hutE8P5ZLHmcRe6ulpAHBSGD9XxPiuQDU+dhiIrs5jsWYUiRQaxbEBMi2JBRwevjDs+CGJaQZNJXhRRZQug1yT4Hrx/rQI7ry3HEz7xPv+LhbHeczUKtiMmqviqkiGoZbIKsZ/P1LAwCPB0LL46zC34CoeMmr+vjbO5JRRhzmdtT5Z0UsSGNNASC+DivoebqCyVI317tfzLAUZX5+oEgkECuyw6oig4wypFC1VFVt3a7meDSDnihAl6h6EHCax54pVTWIohLqlCu/Pvvd+ypp+5AVlFV58u6VhB6w/E9eLMMjATMjS5TKVXOS6hdJg7voiYuBtgU0348HlJouThN6ZINkHkYGC1kRxBTF3jEi6MylnIK/MFMBAgVTyQVOPIzQch0LkHakh0ehRofR+BrGMo0fQ1BKH8KXYxg8IiqOub6CuJmyvXjMVpryRj5ooEEwlfjQzU3hPAtIxelnkKs0GfG4okTkDf2Ep5yiaukUvYaj1Gn1TVEBMoMOBtaO5FalhslXEP80LAER6+0EHjTAawhhUqVMX1wmSnnKg3xdOCiifjIcQwrGQ6TximecFMnEvB1FyKuIGQviC9yydR1TTkfagYHe8BpjCDCGQ5Tyx3iuxURJXUFUJ3UtyCZLAlhzL+GYHy9AgRdUjHXHj10IAL6KjQVswDCgTF0OMf3NILJJYoiUMP3kQ2hbElIgK2LzEXNYLl0ynhCAcxs0sSTFA+rlm/gDA5uSHD0OPUdRREBlOZkGJUidpwgDC1LOg/mSTkvNtHFCpn0Mfo9YWYPIgwJ4QgBReI0r6o8Bdp4mEAA4NE0gQVqkQjTMwCCRRpir4FoXVCFH3fK73YfAv0hFV+EJMOkqk+nuq6ceIjKJH40jJPqdDrNZqfcgfQJpN+ZJTxyittQpuR57XdbtlqetFZgEAQdkgLjUgyLy+VSDZWA4ZIqHsaX/Qxm6JSuh2NPEQg9naA2TFaWlzt8X0Z9iGCgO3S76HXhOHkdD8fFx8eliiUDSpGzgrf4fL7MjiuHk3ERwgHSUEARs6LwQn0OgL2CYLcTMICAIsdkXB3O2ea8JACMTn/j0/myPW9m+TCRHgygNQsgvjRGT/USUgHVtBuIFxiBxVR4AeQ0Hl8u583246IgyIGad7lstpf98eQ4vgwUgPjQSNgNx7Yphu8wJ3M6oiG2QCWYnHat1KmK8XB/OW+35z6kuiwRUs0Lh0uIYTHf/wzJ7ihNbEXRENCAUTL6CIlBk+y82RBEUxByybbnfVFH0LFwGV2Qlp7dyoggkzuaTCTbVhCf0RoBdAfP87iCcZdgr8t5Oe5CwFwfl499XBcJTGrofIYZo+2FjNEoxfElZITduD0YEcTj6HDssQMsfsnJGY9Xl4+PfHkYdxjj+HL+GJz3w2OUSkUIYvqjDkNBJgpCX0Ey2jZkMNRWJgurbyUFmGt4/vgYfMQ9yPgAx1arYe74wqDGBkzMTe51IdJc6PiqB4GCF+BSQTklGcbo6NVHEfesBVJ8FAnUmdhXxR5P4VYXohxPISyLCRyGqc0GW8l5FlUJjLQZWbk9kR81CZJf6KkR50nLVx62cUAZwjT5PihVRqCIzTXEIntxWjw4tIagoYcSgv9SP+4I1aDRSpJbgYagyIx/pT0OCYGENE2MLA1hhvA5dt1QEExo4bUCxLCYDYv5CEu/alcYQczgEwRb1CwYqZAYyZakMZcR+DylVSMUhQhVGWpFoohhvXWilDfNJJkL5keZiJiRskBi+zixR1pFCQmshiL8NLLoixYCswpAXAOrIFxR2+V9hshS/4OabVUJ8NughdC6IAysyMXlb0QQ6X7SxMVaG7md7pUgVgOBdzlpvU/alCcIJ8M2ECyTYPfI1Yw4lgUfPAW1HD3SQhgWJCtty3Aqp1/qhJdtfebQYPcghp86SlCHIonjXFEo7nptOEMb8GY03UhQeE3lQVIEFjtWu60BHwOhwpdGRlvYiZ4hHSfhnyBGoKziMtUSyYVD2swy3AhxPrS6Bitdp5l4MTq4hgyHUWr0BCoqQsgnrGnu7p5p4asVAXNhjxM2qhipwcVTi3HiJG6RYne1xvMNoSDYfjVtvVyeaIbJoZEKLL9t4LFkLJ6edmk0vJJIPD2FfQa0OSE0B6qPpLUWLVAoHSepqR3vh6AK76iCV/cEsl6LpNUhEms82F9H8tIINYR1lg53MlMq8JX8nQCIb4WihUBpKkGXpyOsuqEBO1XYhK3XRzhU9q0VCr4oodxJCFtpayl7ZdzEDUzUGCmGH/LW89z3F0BZP3leedyDHHNvQZD+slssghAhtlr/Nss5HV8r05UQXwBGkPs7lBIpTzBvylnhYbR4QnMFXYi/COFiSlhAAARKRNLdxKGkR9ebuGYLBFFE2PG9AVeIEFMVuZHpoAEXZQvhHAAeMEIq/EytG5olttwsWBnS82AvAdr4GGSdOgmQxS5yXMpmKPp0INR7VJwYIGEZ+mB5w3LZ1b6H3L8x0Cvwve/DQo08w1t78fJpsUhliacQi0CVha/2CaAWhagZ6BHC2QRxr3dw5AaO4SrbwkwlKQFtCkrK0y7pZYkTLnYBl0IIYCzgJAGxBdMXK642cKQqmXQ8RjHkFEHCZjqCkgYVLG4Filmyk4TAV4hFCCcFXLrk01aU2lSDwVyXKD7lS1mCG5vYgfLb7VWg5qeECMInEmB4pWRAJq8+baqpze0CB5MUDmEbluvdosT5Ai84jZOk1xANC4JIxPEIYeD5fiAhLLmxPShzZep2SwT313UN50K8pEmSwqsPcYoU1Fhguhzns/kx9DxiIMS9tdGp9tCXrqG9Dz8ua0juORSQXbILYXmYwqIUu4eBidPkMC4EeGO9Xtez2ePjbFZ2IFgZP2/Z6s1nq4X4yNhsNvt9VcFQO3CR17lL4Il0BwxQ4pFkVgsNMVcUSDfuPMht9MJtIOv9HjdVAVOdUCOAmFGkJl1z5JXrOlwT4ts3hMx2nnJJ+rNtdHVDYJJKVaQiwHjcbDf5CUiXIs2b8AJbxflx/zRHAgmpAhCgpHRT+uYNAeWWLJWMYCcZINsKIHuYD+PE0ZAVJMpq0zIQMgv9lnH71oaOY6IApNaMx+2p2uwTx3LTQqlSJEmeOE6x3zYQpKzRXpLxs5s0KvHvswI3HsV8Tww0975YxlFQFTC9xwri4AaIE196EHC9Yvz8dlNzA3AFENyvftROreJYJFgcc9VwAwXKShrF2y5kHnr5l2/PTSoeHPctZLvCtitKCzATMZK4yG0H+67Tt5YCqfIVhqbcn3wV/nSJ2wQiN4lxj4ggcYwOoZ6vrwrdZ/olo7ktm+1VjuHZGxgNfB6lq3isfQJOibGDPHUg9/LUL9wvVzeY7zea8e3xRG1qlK8KR/ukyl3ZpsaN67fyvK/cYG5vld9vVRY8wtjO0K3yJE5WcnMFAi2HoxFgLoqhTvrarXK86a8eFNhKg2+pL3Ug/aJiJadFdMoqIl1WXTW+fNP/rn18ATgwwJ5aekCkcPVRHGMBW9lq3UX2UojfeXzhrvsgBqizlKNFZdWRUzmS7Lj55W8+iHHXfaTkfrqKqYPfQ4eKw+PrdNrXJgadftTjPzxSgtJ9/mZ6KJJ6u9kUCc4wm6LYbKCkHdqncP7KMzhKDoctyuHQ/+K/I1A6Dyxlh8O0OByyA0x7y8NquTo0av7RA0so+OjVRFpsCYqADmCkbAUQWW7/wqNXikMPkU2z+2wyzSbLaTZdwue/+BCZBv3J43D/A0fwr3B8wlvcAAAAAElFTkSuQmCC" alt="logo">
+      <img class="logo" src="logo.png" alt="logo">
       Eooc!易欧克临时邮箱
     </div>
  
@@ -107,6 +92,7 @@ window.onload = function(){
 <div class="ui container">
     
 	<div class="ui   segment">
+	    
 	    	<p>填写邮箱时候，不想使用您的真实邮箱？那就使用免费临时邮箱。不需要注册，邮箱持续24小时，可以任意设置邮箱名，随时更换邮箱。</p>
 	    	<h4 class="ui header">使用方式</h4>
 			<p>1、默认为系统自动生成，如需修改或自定义邮箱请请点击修改按钮修改即可。</p>
@@ -120,15 +106,26 @@ window.onload = function(){
 			<p>博客: <a target="_blank" href="https://blog.tsutsu.one">tsutsu.cc</a></p>
       <p>万能工具箱: <a target="_blank" href="https://tool.tsutsu.cc">tool.tsutsu.cc</a></p>
       <p>系统监控: <a target="_blank" href="https://ops.seto.top">ops.seto.top</a></p>
+      
+      <h1>官方域名: <a href="https://eeooc.com">eeooc.com</a></h1>
+      <p><b>你也可以自定义域名!</b> 只需添加两条解析即可! 给同一个域名添加:</p>
+      <ul>
+          <li><h4>CNAME --> fuck.tsutsu.icu</h4></li>
+          <li><h4>MX --> fuck.tsutsu.icu</h4></li>
+      </ul>
+      <p>然后访问你的域名即可~</p>
        </div>
+       
 </div>
-<div class="ui hidden divider"></div>
+
+<div class="ui hidden divider">
 	<div class="ui message">
 		<div class="header">
 			<center>Copyright 2021-2022 つつ All Rights Reserved.  |  本程序由 <a style="color: #767676;"  href="tsutsu.cc" target="_blank">つつ</a> 维护和运行</center>
 		</div> 
 	</div>
 </div>
+
 <div class="ui hidden divider"></div>
 <div class="ui modal" id="raw">
   <div class="header">
@@ -136,6 +133,22 @@ window.onload = function(){
   <div class="content">
   </div>
 </div>
+<script>
+window.onload = function(){
+   swal('欢迎使用Eooc邮箱!','本程序由 つつ 强力驱动','success');
+}
+    function copyText(){ // text: 要复制的内容， callback: 回调
+    var text=document.getElementById('shortid').value;
+    var tag = document.createElement('input');
+    tag.setAttribute('id', 'cp_hgz_input');
+    tag.value = text;
+    document.getElementsByTagName('body')[0].appendChild(tag);
+    document.getElementById('cp_hgz_input').select();
+    document.execCommand('copy');
+    document.getElementById('cp_hgz_input').remove();
+    swal('复制成功','您的邮箱为：'+ text,'success');
+}
+</script>
 <script src="js/jquery.min.js"></script>
 <script src="js/semantic.min.js"></script>
 <script src="js/socket.io.min.js"></script>
@@ -164,6 +177,9 @@ box-shadow: 0px 0px 0px 2px #d4d4d5;
 .myButton:active {
 	position:relative;
 	top:1px;
+}
+.swal2-container{
+    position:relative !important;
 }
 </style>   
 <style>
