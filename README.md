@@ -28,7 +28,7 @@ Telegram群组: [@tsutsu_group](https://t.me/tsutsu_group)
 # 官方域名: [eeooc.com](https://eeooc.com) & [fuck.tsutsu.icu](https://fuck.tsutsu.icu)
 ### 你也可以自定义域名! 只需添加两条解析即可!
 
-给你的域名添加一个叫做eooc的解析 (只要是eooc.开头就可以)
+给你的域名添加一个叫做**eooc的解析 (只要是eooc.开头就可以)**
 ```
 CNAME --> fuck.tsutsu.icu
 
